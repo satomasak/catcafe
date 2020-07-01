@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url(style.css);			/*head linkで呼び出さずにimportを使用*/
+
+
+/*index main スタイル*/
+main {
+	text-align: center;/*IE用*/
+}
+
+#largeFrame {
+	height:360px;
+	position:relative;
+}
+#main_largeImage {
+	width: 480px;
+	height: 360px;
+}
+#main_smallImage {
+	position:absolute;			/*あくび猫画像の親要素のdivに対する相対位置*/
+	top: 220px;
+	right:-30px;
+	width: 150px;				/*あくび猫画像縮小*/
+	height: auto;				/*あくび猫画像縮小*/
+}
+#topMainLogo {
+	position:absolute;          /*h3ロゴの親要素のdivに対する相対位置*/
+	top: 20px;
+	left:200px;
+	width: 100px;
+	margin-left: 0;
+	color: #ffffff;
+	font-size: 25px;
+}
+#topMainLogo span {				/*spanで構造化することでspan内部のコンテンツの色とフォントを変化。*/
+	font-size: 15px;
+	color: RGB(255, 152, 102);
+	position: absolute;			/*spanを利用してh3を親要素にする。*/
+	top:10px;
+	left: -70px
+}
+/*index main スタイルここまで*/
+
+
+
+
+
+/*index nav スタイル*/
+#top_nav .top_nav_left {
+	display: inline-block;		/*floatを使わずにコンテンツを右に並べていくため*/
+	width: 220px;				/*480pxのうち220pxずつ配置。3つ目は下段に*/
+	height: 180px;				/*高さ指定しないと表示されない*/
+	margin-left:3px;			/*以下、左列の枠のポジション調整*/
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+#top_nav .top_nav_right {
+	display: inline-block;		/*blockのdivをインライン的に整列*/
+	width: 220px;
+	height: 180px;
+	margin-left: 20px;			/*以下、右列のポジション調整*/
+	margin-bottom: 10px;
+}
+.top_nav_left, .top_nav_right {		/*以下、ナビのdivへの背景設定　中画像の位置設定のための親要素のdivにrelative設定*/
+	background-image: url(../hidamariImg/indexframe.png), url(../hidamariImg/topbackimage.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: center center, center center;/*2枚の背景画像の位置設定*/
+	position:relative;								/*HTMLで挿入される画像の位置をabsoluteで決定するための設定*/
+}
+.top_nav_image_bottom {		/*以下、absoluteで親要素のdivに対するボトム画像の位置設定*/
+	position:absolute;
+	top: 50px;
+	left:20px;
+}
+.top_nav_image_top {		/*以下、absoluteで親要素のdivに対するトップ文字画像の位置設定*/
+	position:absolute;
+	top: 15px;
+	left:45px;
+}
+.top_nav_a_rangAdjust {		/*indexのナビでアンカーリンクの範囲を外枠いっぱいに広げるための設定*/
+	/*width: 100%;*/
+	height: 100%;
+}
+#top_nav_left a:hover {
+	transform: scale(1.3,1.3);
+}
+/*index nav スタイルここまで*/
+
+
+
+/*装飾　参考用　背景の重ね置き*/
+	/*background-image: url(../hidamariImg/yuru_neko6_small.png), url(../hidamariImg/indexframe.png);*//*手前になる画像、背景になる画像の順*/
+	/*	background-repeat: no-repeat, no-repeat;*/												/*繰り返しなし*/
+	/*	background-position:center center,center bottom; */										/*手前の画像のポジションx軸、y軸ともに中央　奥の画像のポジションx軸中央、y軸ボトム*/
+	/*}*/

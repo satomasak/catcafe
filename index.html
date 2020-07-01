@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="宮崎の青島にある猫カフェです。観光の合間の休息や、海の近くで猫に囲まれた空間での癒しのひと時にご利用ください。宮崎の食材を使た手作りランチも好評です。">
+	<link rel="stylesheet" href="css/indexStyle.css">	<!--index.html用のスタイルシート-->
+	<title>陽だまり</title>
+	
+</head>
+<body>
+<header id="top">
+	<h1>
+		<a href="index.html"><img src="hidamariImg/title.png" alt="hidamari"></a>
+	</h1>
+</header>
+<main>
+	<div id="largeFrame">			<!--画像とロゴを相対配置するためのdiv cssでposition:relative;設定-->
+		<img src="hidamariImg/aoshimaSeaSanset.jpeg" alt="青島の海" id="main_largeImage">		<!--最奥背景画像-->
+		<img src="hidamariImg/illustrain06-cat07[1].png" alt="あくび猫" id="main_smallImage">	<!--あくび猫画像-->
+		<h3 id="topMainLogo"><span>猫カフェ</span>陽だまり</h3>									<!--ロゴ。装飾用にspanで構造化-->
+	</div>
+</main>
+<section id="SNS">
+	<a href=""><img src="hidamariImg/indexSNS.png" alt="SNSリンク"></a>								<!--フォント　富士ポップ-->
+</section>
+<div id="top_nav">	<!--他ページのナビの設定とは異なるためdivでグルーピング-->
+	
+	<div class="top_nav_left">																			<!--背景設定のためのdivグルーピング。左列の位置調整のためにクラス名top_nav_leftを設定-->
+		<a href="concept.html">
+			<div class="top_nav_a_rangAdjust">															<!--img2枚をアンカーリンクするためのグルーピング。cssでwidth、heightを100%設定することで背景の外枠いっぱいにアンカーの範囲を広げる。-->
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">		<!--中画像2枚挿入　cssのabsoluteで位置設定-->
+				<img src="hidamariImg/conceptTitle.png" alt="コンセプト" class="top_nav_image_top">		<!--フォント　富士ポップ-->
+			</div>
+		</a>
+	</div>
+	
+	<div class="top_nav_right">		<!--背景設定のためのdivグルーピング。左列の位置調整のためにクラス名top_nav_rightを設定-->
+		<a href="ivent.html">
+			<div class="top_nav_a_rangAdjust">
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">
+				<img src="hidamariImg/iventTitle.png" alt="イベント" class="top_nav_image_top">
+			</div>
+		</a>
+	</div>
+	
+	<div class="top_nav_left">
+		<a href="system.html">
+			<div class="top_nav_a_rangAdjust">
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">
+				<img src="hidamariImg/systemTitle.png" alt="システム" class="top_nav_image_top">
+			</div>
+		</a>
+	</div>
+	
+	<div class="top_nav_right">
+		<a href="foodDrink.html">
+			<div class="top_nav_a_rangAdjust">
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">
+				<img src="hidamariImg/foodDrinkTitle.png" alt="food&drink" class="top_nav_image_top">
+			</div>
+		</a>
+	</div>
+	
+	
+	<div class="top_nav_left">
+		<a href="catStaff.html">
+			<div class="top_nav_a_rangAdjust">
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">
+				<img src="hidamariImg/catStaffTitle.png" alt="catstaff" class="top_nav_image_top">
+			</div>
+		</a>
+	</div>
+	
+	<div class="top_nav_right">
+		<a href="access.html">
+			<div class="top_nav_a_rangAdjust">
+				<img src="hidamariImg/yuru_neko6_small.png" alt="cat" class="top_nav_image_bottom">
+				<img src="hidamariImg/accessTitle.png" alt="アクセス" class="top_nav_image_top">
+			</div>
+		</a>
+	</div>
+</div>
+<footer>
+	<div id="footer_contents">
+		<h3><span>猫カフェ</span>陽だまり</h3>
+		<div id="footer_contents2">
+			<address>
+				<p>宮崎県宮崎市青島</p>
+				<p>0985-XX-0000</p>
+				<p>営業時間&nbsp;10:30～21:00&nbsp;水曜定休日</p>
+			</address>
+			<p><small>copyright&copy;株式会社陽だまり</small></p>
+		</div>
+		<a href="#top"><img src="hidamariImg/e_others_412[1].png" alt="トップページへ"></a>
+		<img src="hidamariImg/illustrain08_cat010[1].png" alt="足跡" id="footer_img">
+	</div>
+</footer>
+</body>
+</html>
